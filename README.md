@@ -37,7 +37,7 @@
 
 1. Clone this repo by running `git clone https://github.com/imranhsayed/graphql-workshop`
 2. `npm install`
-3. `npm run dev` ( Runs )
+3. `npm run dev`
 
 ## Useful Links :link:
 

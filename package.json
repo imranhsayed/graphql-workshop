@@ -4,7 +4,7 @@
   "description": "A GraphQL workshop to learn GraphQL implementations",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
   },
   "keywords": [
     "GraphQL",
@@ -16,5 +16,10 @@
     "Express"
   ],
   "author": "Imran Sayed",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.5"
+  }
 }
