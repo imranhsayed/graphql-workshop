@@ -20,7 +20,7 @@
 2. :arrow_right: React application is set up using [create-react-app](https://github.com/facebook/create-react-app) ( that runs webpack-dev-server for the frontend on `localhost:3000` )
 3. :arrow_right: The schema and graphQl queries are created in `schema.js`
 4. :arrow_right: We have used [wp-graphql](https://github.com/wp-graphql/wp-graphql) WordPress plugin that brings the power of GraphQL to WordPress. 
-5. :arrow_right: GraphiQL playground is available on `localhost:5000/graphiql`.
+5. :arrow_right: GraphiQL playground is available on `localhost:5000/graphql`.
 6. :arrow_right: We have used Apollo Client to build UI in React that fetches data from GraphQL. Apollo client help us create a query and binds our React component with the query, so that when component renders, and handles any queries to GraphQl server and return the results.
 7. :arrow_right: We import `<Apolloclient>` from `apollo-boost` and create a new object called `client` and pass the url for our GraphQL endpoint into this object.
 8. :arrow_right: We wrap our main React Component `<AppoloProvider>` and apollo `client` is then passed to these components, so that the results of your query can be passed to your components.
@@ -30,7 +30,7 @@
 12. :arrow_right: We have displayed all the data received as response of the query on home page( `Home.js` ).
 
 ## GraphiQL Playground DEMO :video_camera:
-
+![](graphiql.gif)
 
 
 ## Installation :wrench:
