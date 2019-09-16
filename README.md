@@ -63,6 +63,7 @@ You can run these commands from root directory.
  so the below two command are not required to run if you run this ).
 2. `npm run dev:client` starts webpack dev server for React on port `5000`
 3. `npm run dev:server` starts nodejs server on port `3000`
+4. `npm run prod:client` runs the build for production for client.
 
 ## License
 
