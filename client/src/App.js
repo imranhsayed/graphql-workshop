@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-	  <div className="App">
+import client from './ApolloClient';
+import { ApolloProvider } from '@apollo/react-hooks';
+import { HOme } from "./components/Home";
 
-	  </div>
-  );
-}
+
+const App = () =>  (
+	<ApolloProvider client={ client }>
+		<HOme/>
+	</ApolloProvider>
+);
 
 export default App;
