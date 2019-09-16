@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev:client": "npm start --prefix client",
+	"prod:client": "npm run build --prefix client",
 	"dev:server": "nodemon server.js",
     "dev": "concurrently \"npm run dev:server \" \"npm run dev:client\" "
   },
