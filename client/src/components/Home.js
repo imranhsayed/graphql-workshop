@@ -12,7 +12,7 @@ const postQuery = gql`
 }
 `;
 
-export const HOme = () => {
+export const Home = () => {
 	const { loading, error, data } = useQuery( postQuery );
 	console.warn( useQuery( postQuery ) );
 	return (
