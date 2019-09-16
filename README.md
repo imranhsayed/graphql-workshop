@@ -57,7 +57,12 @@ Its main job is fetch some GraphQL queries and keep them in sync with one anothe
 
 ## Common Commands :computer:
 
-1. `npm run dev` runs webpack-dev-server for frontend on port 3000 in watch mode and backend server on port 5000. ( Uses concurrently package to run the two servers together ). 
+You can run these commands from root directory.
+
+1. `npm run dev` runs webpack-dev-server for frontend on port 3000 in watch mode and backend server on port 5000. ( Uses concurrently package to run the two servers together,
+ so the below two command are not required to run if you run this ).
+2. `npm run dev:client` starts webpack dev server for React on port `5000`
+3. `npm run dev:server` starts nodejs server on port `3000`
 
 ## License
 

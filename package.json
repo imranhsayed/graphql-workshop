@@ -4,7 +4,9 @@
   "description": "A GraphQL workshop to learn GraphQL implementations",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev:client": "npm start --prefix client",
+	"dev:server": "nodemon server.js",
+    "dev": "concurrently \"npm run dev:server \" \"npm run dev:client\" "
   },
   "keywords": [
     "GraphQL",
@@ -21,5 +23,8 @@
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
     "graphql": "^14.5.5"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2"
   }
 }
