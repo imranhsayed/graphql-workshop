@@ -1,7 +1,7 @@
 {
   "name": "graphql-workshop",
   "version": "1.0.0",
-  "description": "A GraphQL workshop to learn GraphQL implementations",
+  "description": "A GraphQL workshop to learn GraphQL implementations in JavaScript",
   "main": "server.js",
   "scripts": {
     "dev:client": "npm start --prefix client",
