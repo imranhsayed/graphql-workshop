@@ -42,7 +42,7 @@
 
 ## Plugins for GraphQL with WordPress :electric_plug:
 
-Clone and activate these repositories into plugin directory of your WordPress Install.
+Clone these repositories into plugin directory of your WordPress Install and activate them from WordPress dashboard.
 
 1. [wp-graphql](https://github.com/wp-graphql/wp-graphql)
 2. [wp-graphiql](https://github.com/wp-graphql/wp-graphiql)
