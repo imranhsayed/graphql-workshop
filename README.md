@@ -9,7 +9,7 @@
 1. GraphQL
 2. React
 3. Apollo Client
-4. External dependency [wp-graphql](https://github.com/wp-graphql/wp-graphql) ( for master branch )
+4. External dependency [wp-graphql](https://github.com/wp-graphql/wp-graphql) ( for `graphql-with-wordpress` branch )
 5. Express
 6. Node js
 7. create-react-app ( uses Babel and Webpack )
@@ -42,7 +42,7 @@
 
 ## Plugins for GraphQL with WordPress :electric_plug:
 
-Clone these repositories into plugin directory of your WordPress Install and activate them from WordPress dashboard.
+For `graphql-with-wordpress` branch Clone these repositories into plugin directory of your WordPress Install and activate them from WordPress dashboard.
 
 1. [wp-graphql](https://github.com/wp-graphql/wp-graphql)
 2. [wp-graphiql](https://github.com/wp-graphql/wp-graphiql)
