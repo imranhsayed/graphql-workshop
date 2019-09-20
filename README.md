@@ -16,16 +16,14 @@
 
 ## Details :scroll:
 
-1. :arrow_right: We have set up our backend server in node and express app ( `localhost:5000/graphql` ) in `server.js`.
+1. :arrow_right: We will use [wp-graphql](https://github.com/wp-graphql/wp-graphql) WordPress plugin that brings the power of GraphQL to WordPress and creates a single endpoint for us at `http://your-wordpress-site.com/graphql` for all our queries
+2. :arrow_right: We will use [wp-graphiql](https://github.com/wp-graphql/wp-graphiql) WordPress plugin that gives us a GraphiQL playground avaiable from your WordPress Dashboard. 
 2. :arrow_right: React application is set up using [create-react-app](https://github.com/facebook/create-react-app) ( that runs webpack-dev-server for the frontend on `localhost:3000` )
-3. :arrow_right: The schema and graphQl queries are created in `schema.js`
-4. :arrow_right: We have used [wp-graphql](https://github.com/wp-graphql/wp-graphql) WordPress plugin that brings the power of GraphQL to WordPress. 
-5. :arrow_right: GraphiQL playground is available on `localhost:5000/graphql`.
 6. :arrow_right: We have used Apollo Client to build UI in React that fetches data from GraphQL. Apollo client help us create a query and binds our React component with the query, so that when component renders, and handles any queries to GraphQl server and return the results.
-7. :arrow_right: We import `<Apolloclient>` from `apollo-boost` and create a new object called `client` and pass the url for our GraphQL endpoint into this object.
+7. :arrow_right: We import `Apolloclient` from `apollo-boost` and create a new object called `client` and pass the url `http://your-wordpress-site.com/graphql` for our GraphQL endpoint into this object.
 8. :arrow_right: We wrap our main React Component `<AppoloProvider>` and apollo `client` is then passed to these components, so that the results of your query can be passed to your components.
 9. :arrow_right: The `graphql-tag` ( graphQl query parsing utility ) is installed and `gpl` is imported from it. The `gpl` parses GraphQL query strings into the standard GraphQL AST.
-10. :arrow_right: Use `gpl` to query the data in front react app, from the schema we have create in our node application in backend.
+10. :arrow_right: Use `gpl` to query the data in front react app, from the endpoint created by `wp-graphql` plugin on WordPress.
 11. :arrow_right: We import `graphql` from `react-apollo` to bind apollo to react like so `export default graphql( yourQuery )( YourComponent )` This will make the query results available in props of the component.
 12. :arrow_right: We have displayed all the data received as response of the query on home page( `Home.js` ).
 
@@ -50,17 +48,30 @@ Clone these repositories into plugin directory of your WordPress Install and act
 ## Instructions :point_right:
 
 * `Graphiql` is a tool that we can use as a client to make request to our server.
-* Graph QL endpoint where you can send your query request: `localhost:5000/graphql`
+ It will be available in WordPress dashboard, when you install 
+ 
+ * Put this code in `functions.php` of your WordPress theme to allow cross origin request.
+ 
+ ```$xslt
+function my_customize_rest_cors() {
+    remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );
+    add_filter( 'rest_pre_serve_request', function( $value ) {
+        header( 'Access-Control-Allow-Origin: *' );
+        header( 'Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE' );
+        header( 'Access-Control-Allow-Credentials: true' );
+        header( 'Access-Control-Expose-Headers: Link', false );
+        return $value;
+    } );
+}
+add_action( 'rest_api_init', 'my_customize_rest_cors', 15 );
+``` 
 
 ## Common Commands :computer:
 
 You can run these commands from root directory.
 
-1. `npm run dev` runs webpack-dev-server for frontend on port 3000 in watch mode and backend server on port 5000. ( Uses concurrently package to run the two servers together,
- so the below two command are not required to run if you run this ).
-2. `npm run dev:client` starts webpack dev server for React on port `5000`
-3. `npm run dev:server` starts nodejs server on port `3000`
-4. `npm run prod:client` runs the build for production for client.
+1. `npm run dev` runs webpack-dev-server for frontend on port 3000 in watch mode
+2. `npm run prod` runs the build for production for client.
 
 ## Useful Links :link:
 
