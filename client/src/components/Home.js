@@ -14,8 +14,19 @@ const postQuery = gql`
 
 export const Home = () => {
 	const { loading, error, data } = useQuery( postQuery );
-	console.warn( useQuery( postQuery ) );
+
+	if ( loading ) {
+		return <p>Loading...</p>
+	}
+	if ( error ) {
+		return <p>Error</p>
+	}
 	return (
-		<div>Home</div>
+			<div className="card border-primary m-5" style={{ maxWidth: '20rem' }}>
+				<div className="card-header">{ data.post.title }</div>
+				<div className="card-body">
+					<p className="card-text">{ data.post.content }</p>
+				</div>
+			</div>
 	)
 };
