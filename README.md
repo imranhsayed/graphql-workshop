@@ -9,7 +9,7 @@
 1. GraphQL
 2. React
 3. Apollo Client
-4. External dependency [wp-graphql](https://github.com/wp-graphql/wp-graphql)( for master branch )
+4. External dependency [wp-graphql](https://github.com/wp-graphql/wp-graphql) ( for master branch )
 5. Express
 6. Node js
 7. create-react-app ( uses Babel and Webpack )
@@ -39,16 +39,13 @@
 2. `npm install`
 3. `npm run dev`
 
-## Useful Links :link:
 
-1. [Express GraphQL github link](https://github.com/graphql/express-graphql)
-2. [Apollo GraphQL](https://www.apollographql.com/docs/react/) 
+## Plugins for GraphQL with WordPress :electric_plug:
 
-Apollo Client is way to use GraphQL to build client applications. It helps you build a UI that fetches data with GraphQL, and can be used with any JavaScript front-end.
-When two components need the same data. If an action triggers an update on update, the second one won’t be updated . Apollo solves this using `reactive cache` feature.
-Its main job is fetch some GraphQL queries and keep them in sync with one another
+Clone and activate these repositories into plugin directory of your WordPress Install.
 
-
+1. [wp-graphql](https://github.com/wp-graphql/wp-graphql)
+2. [wp-graphiql](https://github.com/wp-graphql/wp-graphiql)
 
 ## Instructions :point_right:
 
@@ -64,6 +61,15 @@ You can run these commands from root directory.
 2. `npm run dev:client` starts webpack dev server for React on port `5000`
 3. `npm run dev:server` starts nodejs server on port `3000`
 4. `npm run prod:client` runs the build for production for client.
+
+## Useful Links :link:
+
+1. [Express GraphQL github link](https://github.com/graphql/express-graphql)
+2. [Apollo GraphQL](https://www.apollographql.com/docs/react/) 
+
+Apollo Client is way to use GraphQL to build client applications. It helps you build a UI that fetches data with GraphQL, and can be used with any JavaScript front-end.
+When two components need the same data. If an action triggers an update on update, the second one won’t be updated . Apollo solves this using `reactive cache` feature.
+Its main job is fetch some GraphQL queries and keep them in sync with one another
 
 ## License
 
