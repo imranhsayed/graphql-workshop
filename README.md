@@ -84,9 +84,9 @@ The session wouldn't have been so enjoyable and fruitful without your presence.�
 
 📹[MeetUp Highlights](http://bit.ly/2kXSGJF)
 
-📷[Twitter Post with Snaps](https://bit.ly/2ksCnEv)
+📷[Twitter Post with Snaps](https://twitter.com/imranhsayed/status/1175398297579638785?s=20)
 
-![https://twitter.com/imranhsayed/status/1175398297579638785?s=20](graphql-meetup-tweet.png)
+![](graphql-meetup-tweet.png)
 
 ## License
 
