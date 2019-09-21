@@ -40,7 +40,7 @@
 
 ## Branches Information:
 
-1. * [master] Creates a GraphQL server using express and nodejs and adds an endpoint at `localhost:5000/graphql`, where you can send all your query request.
+1. * [master](https://github.com/imranhsayed/graphql-workshop) Creates a GraphQL server using express and nodejs and adds an endpoint at `localhost:5000/graphql`, where you can send all your query request.
    * It has Apollo client with React on front end .
 2. [graphql-with-wordpress](https://github.com/imranhsayed/graphql-workshop/tree/graphql-with-wordpress) uses GraphQL server created by [wp-graphql](https://github.com/wp-graphql/wp-graphql) plugin on your WordPress install and React in frontend. More info is in that branch's read me.
 
@@ -86,6 +86,7 @@ The session wouldn't have been so enjoyable and fruitful without your presence.ð
 
 ðŸ“·[Twitter Post with Snaps](https://bit.ly/2ksCnEv)
 
+![https://twitter.com/imranhsayed/status/1175398297579638785?s=20](graphql-meetup-tweet.png)
 
 ## License
 
