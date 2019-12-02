@@ -1,7 +1,7 @@
 # GraphQL React Application
 
 ## Description :clipboard:
-> A GraphQL workshop to learn GraphQL implementations in JavaScript,
+> A GraphQL workshop to learn GraphQL implementations in JavaScript
 
 ## GraphQL App DEMO :video_camera:
 
