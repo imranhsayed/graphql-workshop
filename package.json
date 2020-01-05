@@ -19,6 +19,8 @@
   "author": "Imran Sayed",
   "license": "MIT",
   "dependencies": {
+    "apollo-cache-inmemory": "^1.6.5",
+    "apollo-client": "^2.6.8",
     "apollo-link-http": "^1.5.16",
     "cors": "^2.8.5",
     "express": "^4.17.1",
